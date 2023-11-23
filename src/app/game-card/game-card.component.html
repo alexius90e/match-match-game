@@ -1,1 +1,4 @@
-<div class="game-card">game-card</div>
+<div class="game-card" [ngClass]="{ 'fliped': !isFliped }" (click)="flipCard()">
+  <div class="game-card__front"></div>
+  <div class="game-card__back"></div>
+</div>
