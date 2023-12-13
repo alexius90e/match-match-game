@@ -1,0 +1,10 @@
+<div
+  class="game-card"
+  [ngClass]="{ fliped: !gameCard.isFliped }"
+  (click)="flipCard()"
+>
+  <div class="game-card__front">
+    <img class="game-card__front-image" [src]="imageUrl" alt="image" />
+  </div>
+  <div class="game-card__back"></div>
+</div>

@@ -45,17 +45,28 @@
   }
 
   &__front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ffffff;
     background-position: center center;
     background-size: 64%;
     background-repeat: no-repeat;
+    user-select: none;
+
+    &-image {
+      max-height: 70%;
+      max-width: 70%;
+      user-select: none;
+    }
   }
 
   &__back {
-    background-image: url(../../assets/card-bg.jpg);
+    background-image: url(../../../assets/card-bg.jpg);
     background-color: chartreuse;
     background-position: center;
     background-size: cover;
     transform: rotateY(180deg);
+    user-select: none;
   }
 }
